@@ -3,169 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROBLOX - Free Games & Building</title>
+    <title>Roblox</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23e2231a'/><text x='50' y='75' font-size='80' font-weight='900' fill='white' text-anchor='middle' font-family='Arial'>R</text></svg>">
 </head>
 <body>
 
-<!-- ВЕРХНЯЯ ПАНЕЛЬ (как в старом Roblox) -->
-<div class="top-bar">
-    <div class="top-bar-inner">
-        <div class="logo-area">
-            <span class="roblox-logo">ROBLOX</span>
-            <span class="tagline">POWERING IMAGINATION</span>
-        </div>
-        <div class="search-box">
-            <input type="text" placeholder="Search games, people, catalog...">
-            <button>🔍</button>
-        </div>
-        <div class="user-area">
-            <a href="#">Sign Up</a>
-            <a href="#">Log In</a>
+<!-- ХЕДЕР с красной R -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="#" class="logo">
+            <svg class="logo-icon" viewBox="0 0 60 60" width="42" height="42">
+                <rect x="3" y="3" width="54" height="54" rx="6" fill="#e2231a"/>
+                <path d="M16 12 L44 18 L40 30 L26 27 L24 44 L14 42 Z" fill="white"/>
+                <circle cx="38" cy="22" r="3" fill="#e2231a"/>
+            </svg>
+            <span class="logo-text">ROBLOX</span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="#" class="active">Discover</a>
+            <a href="#">Avatar Shop</a>
+            <a href="#">Create</a>
+            <a href="#">Robux</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="search-box">
+                <svg viewBox="0 0 24 24" width="16" height="16"><path fill="#888" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                <input type="text" placeholder="Search">
+            </div>
+            <button class="icon-btn" title="Notifications">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="#fff" d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                <span class="badge">3</span>
+            </button>
+            <div class="user-avatar" title="Builderman">
+                <div class="avatar-head">🧑</div>
+            </div>
         </div>
     </div>
-</div>
+</header>
 
-<!-- НАВИГАЦИЯ -->
-<div class="nav-bar">
-    <div class="nav-inner">
+<!-- САБНАВ -->
+<div class="subnav">
+    <div class="subnav-inner">
         <a href="#" class="active">🏠 Home</a>
-        <a href="#">🎮 Games</a>
-        <a href="#">🛒 Catalog</a>
-        <a href="#">👥 People</a>
-        <a href="#">📰 Blog</a>
-        <a href="#">💬 Forum</a>
-        <a href="#">🎨 Create</a>
-        <a href="#">💰 Robux</a>
+        <a href="#">🔥 Popular</a>
+        <a href="#">⭐ Top Rated</a>
+        <a href="#">🎯 Recommended</a>
+        <a href="#">🆕 New</a>
+        <a href="#">🎪 Events</a>
     </div>
 </div>
 
-<!-- ОСНОВНОЙ КОНТЕНТ -->
-<div class="main-container">
+<main class="content">
 
-    <!-- БАННЕР -->
-    <div class="hero-banner">
-        <div class="hero-content">
-            <h1>WELCOME TO ROBLOX</h1>
-            <p>Build. Play. Imagine. The ultimate virtual world.</p>
-            <button class="play-btn" onclick="alert('🎮 Запуск Roblox Studio...')">PLAY NOW — FREE</button>
+    <!-- HERO CAROUSEL -->
+    <div class="hero-carousel">
+        <div class="hero-slide" style="background: linear-gradient(110deg, #1a2a6c 0%, #b21f1f 60%, #fdbb2d 100%);">
+            <div class="hero-text">
+                <span class="hero-tag">FEATURED EVENT</span>
+                <h1>Ready Player One</h1>
+                <p>Explore the OASIS in the official Roblox event. Limited rewards await!</p>
+                <button class="hero-btn">Play Now</button>
+            </div>
+            <div class="hero-art">🎮</div>
+        </div>
+        <div class="hero-dots">
+            <span class="active"></span><span></span><span></span><span></span>
         </div>
     </div>
 
-    <!-- СЕКЦИЯ "ПОПУЛЯРНЫЕ ИГРЫ" -->
-    <div class="section">
-        <div class="section-header">
-            <h2>🔥 Popular Games</h2>
+    <!-- БЫСТРЫЕ КАТЕГОРИИ -->
+    <div class="quick-cats">
+        <a href="#" class="qc">
+            <div class="qc-icon" style="background:linear-gradient(135deg,#ff5e62,#ff9966)">🎮</div>
+            <span>Games</span>
+        </a>
+        <a href="#" class="qc">
+            <div class="qc-icon" style="background:linear-gradient(135deg,#7f00ff,#e100ff)">👕</div>
+            <span>Avatar Shop</span>
+        </a>
+        <a href="#" class="qc">
+            <div class="qc-icon" style="background:linear-gradient(135deg,#00c6ff,#0072ff)">🛠️</div>
+            <span>Studio</span>
+        </a>
+        <a href="#" class="qc">
+            <div class="qc-icon" style="background:linear-gradient(135deg,#43e97b,#38f9d7)">👥</div>
+            <span>People</span>
+        </a>
+        <a href="#" class="qc">
+            <div class="qc-icon" style="background:linear-gradient(135deg,#f7971e,#ffd200)">💬</div>
+            <span>Forum</span>
+        </a>
+        <a href="#" class="qc">
+            <div class="qc-icon" style="background:linear-gradient(135deg,#fc466b,#3f5efb)">📰</div>
+            <span>Blog</span>
+        </a>
+    </div>
+
+    <!-- ПОПУЛЯРНОЕ -->
+    <section class="section">
+        <div class="section-head">
+            <h2><span class="icon">🔥</span> Popular Right Now</h2>
             <a href="#" class="see-all">See All →</a>
         </div>
-        <div class="games-grid" id="gamesGrid"></div>
-    </div>
+        <div class="games-grid" id="popularGames"></div>
+    </section>
 
-    <!-- СЕКЦИЯ "КАТАЛОГ" -->
-    <div class="section">
-        <div class="section-header">
-            <h2>🛒 Featured Catalog Items</h2>
+    <!-- РЕКОМЕНДАЦИИ -->
+    <section class="section">
+        <div class="section-head">
+            <h2><span class="icon">⭐</span> Recommended For You</h2>
             <a href="#" class="see-all">See All →</a>
         </div>
-        <div class="catalog-grid">
-            <div class="catalog-item">
-                <div class="catalog-img" style="background: linear-gradient(135deg, #ff6b6b, #ee5a6f);">🎩</div>
-                <p>Classic Fedora</p>
-                <span class="price">R$ 150</span>
-            </div>
-            <div class="catalog-item">
-                <div class="catalog-img" style="background: linear-gradient(135deg, #4ecdc4, #44a08d);">🕶️</div>
-                <p>Cool Shades</p>
-                <span class="price">R$ 75</span>
-            </div>
-            <div class="catalog-item">
-                <div class="catalog-img" style="background: linear-gradient(135deg, #feca57, #ff9f43);">👑</div>
-                <p>Golden Crown</p>
-                <span class="price">R$ 500</span>
-            </div>
-            <div class="catalog-item">
-                <div class="catalog-img" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">⚔️</div>
-                <p>Knight Sword</p>
-                <span class="price">R$ 200</span>
-            </div>
-            <div class="catalog-item">
-                <div class="catalog-img" style="background: linear-gradient(135deg, #fd79a8, #e84393);">👕</div>
-                <p>Retro T-Shirt</p>
-                <span class="price">R$ 25</span>
-            </div>
-            <div class="catalog-item">
-                <div class="catalog-img" style="background: linear-gradient(135deg, #00b894, #00cec9);">🧢</div>
-                <p>Baseball Cap</p>
-                <span class="price">R$ 50</span>
-            </div>
-        </div>
-    </div>
+        <div class="games-grid" id="recommendedGames"></div>
+    </section>
 
-    <!-- СТАТИСТИКА -->
-    <div class="stats-bar">
-        <div class="stat">
-            <div class="stat-num">12,847,392</div>
-            <div class="stat-label">Registered Users</div>
+    <!-- ТОП СОЗДАТЕЛЕЙ -->
+    <section class="section">
+        <div class="section-head">
+            <h2><span class="icon">🏆</span> Top Creators</h2>
+            <a href="#" class="see-all">See All →</a>
         </div>
-        <div class="stat">
-            <div class="stat-num">1,204,553</div>
-            <div class="stat-label">Games Created</div>
-        </div>
-        <div class="stat">
-            <div class="stat-num">247,891</div>
-            <div class="stat-label">Players Online</div>
-        </div>
-        <div class="stat">
-            <div class="stat-num">24/7</div>
-            <div class="stat-label">Free To Play</div>
-        </div>
-    </div>
+        <div class="creators-row" id="creatorsRow"></div>
+    </section>
 
-    <!-- СЕКЦИЯ "СОЗДАЙ СВОЮ ИГРУ" -->
-    <div class="studio-section">
-        <div class="studio-content">
-            <h2>🎨 ROBLOX STUDIO</h2>
-            <p>Build your own worlds, games and experiences. No coding required... but if you want to code, we have Lua!</p>
-            <button class="studio-btn">DOWNLOAD STUDIO</button>
+    <!-- ЕЩЁ ИГРЫ -->
+    <section class="section">
+        <div class="section-head">
+            <h2><span class="icon">🎯</span> Up-and-Coming</h2>
+            <a href="#" class="see-all">See All →</a>
         </div>
-        <div class="studio-visual">
-            <div class="block-3d"></div>
-        </div>
-    </div>
+        <div class="games-grid" id="upcomingGames"></div>
+    </section>
 
-</div>
+</main>
 
 <!-- ФУТЕР -->
-<footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-col">
-            <h4>ROBLOX</h4>
-            <a href="#">About Us</a>
-            <a href="#">Careers</a>
-            <a href="#">Press</a>
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <svg viewBox="0 0 60 60" width="32" height="32">
+                    <rect x="3" y="3" width="54" height="54" rx="6" fill="#e2231a"/>
+                    <path d="M16 12 L44 18 L40 30 L26 27 L24 44 L14 42 Z" fill="white"/>
+                </svg>
+                <span>ROBLOX</span>
+            </div>
+            <p>Powering Imagination</p>
         </div>
-        <div class="footer-col">
-            <h4>Community</h4>
-            <a href="#">Forums</a>
-            <a href="#">Blog</a>
-            <a href="#">Wiki</a>
-        </div>
-        <div class="footer-col">
-            <h4>Support</h4>
-            <a href="#">Help</a>
-            <a href="#">Contact</a>
-            <a href="#">Parents</a>
-        </div>
-        <div class="footer-col">
-            <h4>Legal</h4>
-            <a href="#">Terms</a>
-            <a href="#">Privacy</a>
-            <a href="#">Safety</a>
+        <div class="footer-cols">
+            <div>
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Jobs</a>
+                <a href="#">Parents</a>
+                <a href="#">Press</a>
+            </div>
+            <div>
+                <h4>Community</h4>
+                <a href="#">Blog</a>
+                <a href="#">Forum</a>
+                <a href="#">DevForum</a>
+                <a href="#">Wiki</a>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <a href="#">Help</a>
+                <a href="#">Contact</a>
+                <a href="#">Safety</a>
+                <a href="#">Report</a>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookies</a>
+            </div>
         </div>
     </div>
     <div class="footer-bottom">
-        © 2012 Roblox Corporation. All rights reserved. | "Powering Imagination"
+        © 2018 Roblox Corporation · 970 Park Place, San Mateo, CA · All Rights Reserved
     </div>
 </footer>
 
