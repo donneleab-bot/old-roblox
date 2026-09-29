@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBLOX - Free Games & Building</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+</head>
+<body>
+
+<!-- ВЕРХНЯЯ ПАНЕЛЬ (как в старом Roblox) -->
+<div class="top-bar">
+    <div class="top-bar-inner">
+        <div class="logo-area">
+            <span class="roblox-logo">ROBLOX</span>
+            <span class="tagline">POWERING IMAGINATION</span>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search games, people, catalog...">
+            <button>🔍</button>
+        </div>
+        <div class="user-area">
+            <a href="#">Sign Up</a>
+            <a href="#">Log In</a>
+        </div>
+    </div>
+</div>
+
+<!-- НАВИГАЦИЯ -->
+<div class="nav-bar">
+    <div class="nav-inner">
+        <a href="#" class="active">🏠 Home</a>
+        <a href="#">🎮 Games</a>
+        <a href="#">🛒 Catalog</a>
+        <a href="#">👥 People</a>
+        <a href="#">📰 Blog</a>
+        <a href="#">💬 Forum</a>
+        <a href="#">🎨 Create</a>
+        <a href="#">💰 Robux</a>
+    </div>
+</div>
+
+<!-- ОСНОВНОЙ КОНТЕНТ -->
+<div class="main-container">
+
+    <!-- БАННЕР -->
+    <div class="hero-banner">
+        <div class="hero-content">
+            <h1>WELCOME TO ROBLOX</h1>
+            <p>Build. Play. Imagine. The ultimate virtual world.</p>
+            <button class="play-btn" onclick="alert('🎮 Запуск Roblox Studio...')">PLAY NOW — FREE</button>
+        </div>
+    </div>
+
+    <!-- СЕКЦИЯ "ПОПУЛЯРНЫЕ ИГРЫ" -->
+    <div class="section">
+        <div class="section-header">
+            <h2>🔥 Popular Games</h2>
+            <a href="#" class="see-all">See All →</a>
+        </div>
+        <div class="games-grid" id="gamesGrid"></div>
+    </div>
+
+    <!-- СЕКЦИЯ "КАТАЛОГ" -->
+    <div class="section">
+        <div class="section-header">
+            <h2>🛒 Featured Catalog Items</h2>
+            <a href="#" class="see-all">See All →</a>
+        </div>
+        <div class="catalog-grid">
+            <div class="catalog-item">
+                <div class="catalog-img" style="background: linear-gradient(135deg, #ff6b6b, #ee5a6f);">🎩</div>
+                <p>Classic Fedora</p>
+                <span class="price">R$ 150</span>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-img" style="background: linear-gradient(135deg, #4ecdc4, #44a08d);">🕶️</div>
+                <p>Cool Shades</p>
+                <span class="price">R$ 75</span>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-img" style="background: linear-gradient(135deg, #feca57, #ff9f43);">👑</div>
+                <p>Golden Crown</p>
+                <span class="price">R$ 500</span>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-img" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">⚔️</div>
+                <p>Knight Sword</p>
+                <span class="price">R$ 200</span>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-img" style="background: linear-gradient(135deg, #fd79a8, #e84393);">👕</div>
+                <p>Retro T-Shirt</p>
+                <span class="price">R$ 25</span>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-img" style="background: linear-gradient(135deg, #00b894, #00cec9);">🧢</div>
+                <p>Baseball Cap</p>
+                <span class="price">R$ 50</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- СТАТИСТИКА -->
+    <div class="stats-bar">
+        <div class="stat">
+            <div class="stat-num">12,847,392</div>
+            <div class="stat-label">Registered Users</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">1,204,553</div>
+            <div class="stat-label">Games Created</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">247,891</div>
+            <div class="stat-label">Players Online</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">24/7</div>
+            <div class="stat-label">Free To Play</div>
+        </div>
+    </div>
+
+    <!-- СЕКЦИЯ "СОЗДАЙ СВОЮ ИГРУ" -->
+    <div class="studio-section">
+        <div class="studio-content">
+            <h2>🎨 ROBLOX STUDIO</h2>
+            <p>Build your own worlds, games and experiences. No coding required... but if you want to code, we have Lua!</p>
+            <button class="studio-btn">DOWNLOAD STUDIO</button>
+        </div>
+        <div class="studio-visual">
+            <div class="block-3d"></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ФУТЕР -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>ROBLOX</h4>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+        </div>
+        <div class="footer-col">
+            <h4>Community</h4>
+            <a href="#">Forums</a>
+            <a href="#">Blog</a>
+            <a href="#">Wiki</a>
+        </div>
+        <div class="footer-col">
+            <h4>Support</h4>
+            <a href="#">Help</a>
+            <a href="#">Contact</a>
+            <a href="#">Parents</a>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Safety</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2012 Roblox Corporation. All rights reserved. | "Powering Imagination"
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
